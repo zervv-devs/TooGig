@@ -201,12 +201,34 @@ const prevPage = () => {
       </p>
     </div>
 
+ {user ? (
+  <div className="flex flex-col gap-2 mt-auto">
     <button
       onClick={() => handleGetCoupon(gig)}
-      className="w-full bg-green-700 hover:bg-green-800 text-white text-sm font-medium py-2 px-4 rounded transition-colors mt-auto"
+      className="w-full bg-green-700 hover:bg-green-800 text-white text-sm font-medium py-2 px-4 rounded transition-colors"
     >
       Get a Coupon Code
     </button>
+    <button
+      onClick={() => navigate(`/chat?seller=${gig.sellerName}`)}
+      className="w-full border border-green-700 text-green-700 hover:bg-green-50 text-sm font-medium py-2 px-4 rounded"
+    >
+      Contact Seller
+    </button>
+  </div>
+) : (
+  <div className="flex flex-col gap-2 mt-auto">
+    <button
+      onClick={() => handleGetCoupon(gig)}
+      className="w-full bg-green-700 hover:bg-green-800 text-white text-sm font-medium py-2 px-4 rounded transition-colors"
+    >
+      Get a Coupon Code
+    </button>
+    <p className="text-sm text-red-600 font-medium text-center py-2">
+      Login to contact seller
+    </p>
+  </div>
+)}
   </div>
 </div>
 
