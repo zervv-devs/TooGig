@@ -219,7 +219,7 @@ const totalPages = Math.ceil(gigs.length / itemsPerPage);
                   <span className="inline-block mr-1">⭐</span> 5.0 — {freelancer.title}
                 </p>
                 <p className="font-medium text-md text-gray-800 mt-2">
-                  Fro <span className="text-green-800">{freelancer.rate}</span>
+                  From <span className="text-green-800">{freelancer.rate}</span>
                 </p>
              </div>
             </div>
