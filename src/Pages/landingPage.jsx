@@ -39,7 +39,7 @@ const LandingPage = () => {
 
     <button
       onClick={() => setShowAuth(true)}
-      className="border border-white text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-green-700 transition-colors"
+      className="border border-white text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-green-700 transition-color
     >
       Sign Up
     </button>
